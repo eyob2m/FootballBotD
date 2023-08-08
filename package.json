@@ -1,5 +1,5 @@
 {
-  "name": "verceltest",
+  "name": "footballbot",
   "version": "1.0.0",
   "description": "",
   "main": "bot.js",
@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+ 
+    "netlify-lambda": "^2.0.16",
+    "puppeteer": "^21.0.1",
     "telegraf": "3.32"
   }
 }

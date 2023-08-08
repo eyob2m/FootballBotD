@@ -1,8 +1,8 @@
-const t = require('telegraf')
-const bot = new t('6468224337:AAGrt8G8xYxWtKND6yx5PvtGZgvDP1xKRCU')
+
+const telegraf =  require('telegraf')
+module.exports = bot = new  telegraf('6468224337:AAGrt8G8xYxWtKND6yx5PvtGZgvDP1xKRCU')
 
 bot.start(ctx=>{
-    ctx.reply('hellooo')
+    ctx.reply('hi')
 })
-
 bot.launch()
