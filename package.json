@@ -4,7 +4,7 @@
   "description": "",
   "main": "bot.js",
   "scripts": {
-    "build":  "npm build --output s",
+   
     "start": "node bot.js"
   },
   "keywords": [],
