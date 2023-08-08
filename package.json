@@ -2,9 +2,9 @@
   "name": "verceltest",
   "version": "1.0.0",
   "description": "",
-  "main": "./api/bot.js",
+  "main": "api/bot.js",
   "scripts": {
-    "start": "node ./api/bot.js"
+    "start": " npm run build"
   },
   "keywords": [],
   "author": "",
