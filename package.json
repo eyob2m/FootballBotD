@@ -4,6 +4,15 @@
   "description": "",
   "main": "bot.js",
   "scripts": {
+    "prepare": "npm run --silent build",
+    "build": "tsc",
+    "build:docs": "typedoc src/index.ts",
+    "pretest": "npm run build",
+    "test": "ava",
+    "lint": "eslint .",
+    "checks": "npm test && npm run lint",
+    "refresh": "npm run clean && npm ci",
+    "clean": "git clean -fX .eslintcache docs/build/ lib/ typings/",
     "start": "node bot"
   },
   "keywords": [],
