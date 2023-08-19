@@ -1,24 +1,18 @@
 {
-  "name": "tet",
+  "name": "footballbot",
   "version": "1.0.0",
   "description": "",
   "main": "bot.js",
   "scripts": {
-    "prepare": "npm run --silent build",
-    "build": "tsc",
-    "build:docs": "typedoc src/index.ts",
-    "pretest": "npm run build",
-    "test": "ava",
-    "lint": "eslint .",
-    "checks": "npm test && npm run lint",
-    "refresh": "npm run clean && npm ci",
-    "clean": "git clean -fX .eslintcache docs/build/ lib/ typings/",
-    "start": "node bot"
+    "build": "npm install",
+    "start": "node bot.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+ 
+    "puppeteer": "^21.0.1",
     "telegraf": "3.32"
   }
 }
